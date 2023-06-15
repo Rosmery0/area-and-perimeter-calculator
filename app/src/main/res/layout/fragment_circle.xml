@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF9FB"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".CircleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle"
+            android:textColor="#813558"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/circle" />
+
+        <EditText
+            android:id="@+id/circle_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:ems="10"
+            android:hint="Diameter"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="#A6488F"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/circle_area_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle Area:"
+            android:textColor="#A6488F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/circle_perimeter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Circle Perimeter: "
+            android:textColor="#A6488F"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="#B5A6488F"
+            android:text="Calculate"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

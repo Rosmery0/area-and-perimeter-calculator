@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".TriangleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Triangle"
+            android:textColor="#DFF15FAF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/triangle_img"
+            android:layout_width="211dp"
+            android:layout_height="172dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/triangle" />
+
+        <EditText
+            android:id="@+id/triangle_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:ems="10"
+            android:hint="Sides sizes (cm):"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/triangle_area_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Triangle Area (cm):"
+            android:textColor="#DFF15FAF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/triangle_perimeter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Triangle Perimeter (cm):"
+            android:textColor="#DFF15FAF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_triangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#DFF15FAF"
+            android:text="Calculate" />
+    </LinearLayout>
+
+</FrameLayout>
